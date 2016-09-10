@@ -1,1 +1,1 @@
-alert("Welcome to the NFL Trivia Challenge");
+// alert("Welcome to the NFL Trivia Challenge");
