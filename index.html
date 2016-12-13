@@ -3,44 +3,60 @@
 
 <head>
     <meta charset="utf-8">
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <title>GIPHYIPEE</title>
+    <!-- Bootstrap CSS -->
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- jQuery -->
 
-    <title>Giphy</title>
+    <script src='http://code.jquery.com/jquery-2.1.3.min.js'></script>
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="assets/css/style.css" media="screen" title="no title">
+    <!-- Javascript -->
+
+    <script src="assets/js/app.js" charset="utf-8"></script>
+
 </head>
 
 <body>
-    <div>
-        <div class="jumbotron">
-            <h1>Welcome to the World of Giphy's!</h1>
-            <p><a class="btn btn-primary btn-lg" href="https://giphy.com" role="button">Learn more about GIPHY</a></p>
+  <div class="jumbotron">
+    <h1>The World of Cartoon Giphys</h1>
+  </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 button-size">
+                <div id="buttonMania"></div>
+            </div>
+            <!-- /.col-sm-12 -->
         </div>
-        <div id="buttonField">
-            <!-- <div class="container">
-                <button type="button" class="btn btn-default">Southpark</button>
-                <button type="button" class="btn btn-default">Bob's Burgers</button>
-                <button type="button" class="btn btn-default">Family Guy</button>
-                <button type="button" class="btn btn-default">The Simpsons</button>
-                <button type="button" class="btn btn-default">Futurama</button>
-                <button type="button" class="btn btn-default">Archer</button>
-                <button type="button" class="btn btn-default">King of the Hill</button>
-                <button type="button" class="btn btn-default">American Dad!</button>
-            </div> -->
+        <!-- /.row -->
+        <div class="row">
+            <div class="col-sm-9">
+                <div id="gifsAppearHere">
+                    <div class="row">
+                        <div class="col-xs-4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.col-sm-8 -->
+            <div class="col-sm-3">
+                <div class="input-group to_the_right">
+                    <input type="text" class="form-control" placeholder="Search for..." id="search-query">
+                    <span class="input-group-btn">
+            <button class="btn btn-default" type="button" id="go-button">Search!</button>
+          </span>
+                </div>
+                <!-- /input-group -->
+                <div class="title"></div>
+            </div>
+            <!-- /.col-sm-4 -->
         </div>
-        <form id="search-form">
-            <label for="search-input"> Add in your Search</label>
-            <input type="text" id="search-input"><br>
-            <input type="text" value="Submit">
-        </form>
+        <!-- /.row -->
     </div>
+    <!--/.container-->
 
-    <div id="searches"></div>
-
-    <script src="assets/javascript/app.js">
-    </script>
 </body>
 
 </html>
