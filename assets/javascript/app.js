@@ -17,3 +17,8 @@ function populateButtons(searchArray, classToAdd, areaToAddTo) {
     $(areaToAddTo).append(a);
   }
 }
+
+$(document).on('click','.searchButton', function() {
+  var type = $(this).data('type');
+  console.log(type);
+})
