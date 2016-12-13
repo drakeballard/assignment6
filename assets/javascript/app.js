@@ -1,16 +1,17 @@
-// alert("Welcome to the NFL Trivia Challenge");
+// alert('Welcome to the NFL Trivia Challenge');
 $(function() {
-  console.log("page loaded");
+  populateButtons(searchArray,'searchButton','#buttonField')
+  console.log('page loaded');
 })
 
 
-var searchArray = ["South Park", "Bob's Burger", "Archer", "Family Guy", " The Simpsons", "Futurama", "King of the Hill", "American Dad"];
+var searchArray = ['South Park', 'Bobs Burger', 'Archer', 'Family Guy', ' The Simpsons', 'Futurama', 'King of the Hill', 'American Dad'];
 
-function populateButtons(searchArray, classToAddm areaToAddTo) {
+function populateButtons(searchArray, classToAdd, areaToAddTo) {
   $(areaToAddTo).empty();
-  for(var i=o; i<searchArray.length;i++) {
+  for(var i=0; i<searchArray.length;i++) {
     var a = $('<button>');
-    a.addclass(classToAdd);
+    a.addClass(classToAdd);
     a.attr('data-type',searchArray[i]);
     a.text(searchArray[i]);
     $(areaToAddTo).append(a);
