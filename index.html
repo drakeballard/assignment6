@@ -1,36 +1,46 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+
     <title>Giphy</title>
-  </head>
-  <body>
-  <div>
-    <div class="jumbotron">
-      <h1>Welcome to the World of Giphy's!</h1>
-      <p><a class="btn btn-primary btn-lg" href="https://giphy.com" role="button">Learn more about GIPHY</a></p>
+</head>
+
+<body>
+    <div>
+        <div class="jumbotron">
+            <h1>Welcome to the World of Giphy's!</h1>
+            <p><a class="btn btn-primary btn-lg" href="https://giphy.com" role="button">Learn more about GIPHY</a></p>
+        </div>
+        <div id="buttonField">
+            <div class="container">
+                <button type="button" class="btn btn-default">Southpark</button>
+                <button type="button" class="btn btn-default">Bob's Burgers</button>
+                <button type="button" class="btn btn-default">Family Guy</button>
+                <button type="button" class="btn btn-default">The Simpsons</button>
+                <button type="button" class="btn btn-default">Futurama</button>
+                <button type="button" class="btn btn-default">Archer</button>
+                <button type="button" class="btn btn-default">King of the Hill</button>
+                <button type="button" class="btn btn-default">American Dad!</button>
+            </div>
+        </div>
+        <form id="search-form">
+            <label for="search-input"> Add in your Search</label>
+            <input type="text" id="search-input"><br>
+            <input type="text" value="Submit">
+        </form>
     </div>
-      <div>
-        <button type="button" class="btn btn-default">Southpark</button>
-        <button type="button" class="btn btn-default">Bob's Burgers</button>
-        <button type="button" class="btn btn-default">Family Guy</button>
-        <button type="button" class="btn btn-default">The Simpsons</button>
-        <button type="button" class="btn btn-default">Futurama</button>
-        <button type="button" class="btn btn-default">Archer</button>
-        <button type="button" class="btn btn-default">King of the Hill</button>
-        <button type="button" class="btn btn-default">American Dad!</button>
-      </div>
-      <div>
-        
-      </div>
-  </div>
 
+    <div id="searches"></div>
 
-	<script src="assets/javascript/app.js">
+    <script src="assets/javascript/app.js">
+    </script>
+</body>
 
-	</script>
-  </body>
 </html>
