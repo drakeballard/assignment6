@@ -23,3 +23,14 @@
 .img-resize {
   width: 100%;
 }
+
+body {
+  background-image: url("../img/johnny-bravo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+h1 {
+  color: white;
+}
